@@ -20,7 +20,7 @@ st.write('Random Forest Regressor')
 # In[6]:
 
 
-loaded_model = pickle.load(open('pretrained_model.sav', 'rb'))
+loaded_model = pickle.load(open('filename.sav', 'rb'))
 
 
 # In[ ]:
