@@ -51,6 +51,6 @@ def user_input_features():
     empty = ""
 
  if st.button("Predict The Motor speed"):
-        empty = RandomForest([ambient,coolant,u_d,u_q,i_d,i_q,pm,stator_winding])
+     empty = RandomForest([ambient,coolant,u_d,u_q,i_d,i_q,pm,stator_winding])
 
 st.success(empty)
