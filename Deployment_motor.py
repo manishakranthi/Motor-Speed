@@ -59,28 +59,10 @@ def user_input_features():
             'stator_yoke':stator_yoke,
             'stator_tooth':stator_tooth,
             'stator_winding':stator_winding}
-    features = pd.DataFrame(data,index = [0])
-    return features 
+     
  empty = ''
-    if st.button('Predict The Motor speed'):
+
+ if st.button('Predict The Motor speed'):
         empty = RandomForest([ambient,coolant,u_d,u_q,i_d,i_q,pm,stator_winding])
+
 st.success(empty)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
