@@ -48,21 +48,9 @@ def user_input_features():
     stator_yoke = st.sidebar.number_input("Insert stator_yoke")
     stator_tooth = st.sidebar.number_input("Insert stator_tooth")
     stator_winding = st.sidebar.number_input("Insert stator_winding")
-    data = {'ambient':Ambient,
-            'coolant':Coolant,
-            'u_d':u_d,
-            'u_q':u_q,
-            'torque':Torque,
-            'i_d':i_d,
-            'i_q':i_q,
-            'pm':pm,
-            'stator_yoke':stator_yoke,
-            'stator_tooth':stator_tooth,
-            'stator_winding':stator_winding}
-     
- empty = ''
+    empty = ""
 
- if st.button('Predict The Motor speed'):
+ if st.button("Predict The Motor speed"):
         empty = RandomForest([ambient,coolant,u_d,u_q,i_d,i_q,pm,stator_winding])
 
 st.success(empty)
